@@ -1,0 +1,2 @@
+rootProject.name='SHOpen Gamer App'
+include ':app'
