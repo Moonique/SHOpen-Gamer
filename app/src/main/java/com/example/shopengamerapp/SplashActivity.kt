@@ -2,19 +2,27 @@ package com.example.shopengamerapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
+import java.util.*
+import kotlin.concurrent.schedule
 
 class SplashActivity : AppCompatActivity() {
 
-    private val SPLASH_TIME_OUT: Long = 15000
+    private val timer = Timer()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        Handler().postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+        timer.schedule(3000) {
+            val intent = Intent(this@SplashActivity, MainActivity::class.java)
+            startActivity(intent)
             finish()
-        }, SPLASH_TIME_OUT)
+        }
+    }
+
+    override fun onPause() {
+        timer.cancel()
+        super.onPause()
     }
 }
