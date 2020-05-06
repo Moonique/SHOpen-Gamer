@@ -4,48 +4,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
-    android:orientation="vertical">
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:theme="@style/AppTheme">
 
     <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
         android:contentDescription="@string/open_logo"
         android:src="@drawable/ic_launcher_background"
         app:srcCompat="@android:drawable/sym_def_app_icon" />
 
     <TextView
-        android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/TextAppearance.MyTheme.Headline5"
+        android:padding="20dp"
         android:gravity="center"
-        android:padding="30dp"
-        android:text="@string/open_name"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:indeterminateTint="@color/black" />
+        android:text="@string/open_name" />
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
         android:gravity="center"
-        android:padding="15dp"
+        style="@style/TextAppearance.MyTheme.Subtitle1"
         android:text="@string/slogan"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:textStyle="bold" />
+        android:padding="20dp" />
 
 </LinearLayout>
 

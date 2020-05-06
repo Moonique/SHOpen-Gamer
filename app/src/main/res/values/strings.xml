@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">SHOpen Gamer App</string>
     <string name="slogan">The Game is On!</string>
-    <string name="open_name">Армагеддон. 4 минуты до полуночи</string>
+    <string name="open_name">Армагеддон. \n 4 минуты до полуночи</string>
     <string name="title_activity_main">MainActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
