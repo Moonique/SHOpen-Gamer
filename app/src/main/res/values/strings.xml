@@ -6,4 +6,8 @@
     <!-- Strings used for fragments for navigation -->
 
     <string name="open_logo">Open logo</string>
+    <string name="login_title">ВХОД</string>
+    <string name="team_color_field">Цвет команды</string>
+    <string name="game_date_field">Дата игры</string>
+    <string name="login_button">Войти</string>
 </resources>
