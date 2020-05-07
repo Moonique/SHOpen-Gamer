@@ -8,12 +8,37 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:colorBackground">@color/white_50</item>
 
+        <!--Material type attributes-->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.MyTheme.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.MyTheme.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.MyTheme.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.MyTheme.Headline4</item>
         <item name="textAppearanceHeadline5">@style/TextAppearance.MyTheme.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.MyTheme.Headline6</item>
         <item name="textAppearanceSubtitle1">@style/TextAppearance.MyTheme.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.MyTheme.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.MyTheme.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.MyTheme.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.MyTheme.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.MyTheme.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.MyTheme.Overline</item>
+        <!--Material shape attributes-->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyTheme.SmallComponent
+        </item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyTheme.MediumComponent
+        </item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyTheme.LargeComponent
+        </item>
+        <!--Component styles-->
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.Dialog.Alert
+        </item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.MyTheme.BottomSheetDialog</item>
+        <item name="navigationViewStyle">@style/Widget.MyTheme.NavigationView</item>
+        <item name="toolbarStyle">@style/Widget.MaterialComponents.Toolbar.PrimarySurface</item>
 
     </style>
 
-    <style name="AppTheme.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
         <item name="android:windowFullscreen">true</item>
         <item name="windowNoTitle">true</item>
     </style>
@@ -21,5 +46,22 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="ThemeOverlay.MyTheme.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="bottomSheetStyle">@style/Widget.MyTheme.BottomSheet.Modal</item>
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+    </style>
+
+    <style name="Widget.MyTheme.BottomSheet.Modal" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="shapeAppearanceOverlay">?attr/shapeAppearanceLargeComponent</item>
+    </style>
+
+    <!--Navigation Drawer-->
+    <style name="Widget.MyTheme.NavigationView" parent="Widget.MaterialComponents.NavigationView">
+        <item name="itemTextAppearance">?attr/textAppearanceBody2</item>
+    </style>
 
 </resources>
