@@ -2,7 +2,6 @@
     <string name="app_name">SHOpen Gamer App</string>
     <string name="slogan">Ваше время скоро закончится.</string>
     <string name="open_name">Армагеддон. \n 4 минуты до полуночи</string>
-    <string name="title_activity_main">MainActivity</string>
     <!-- Strings used for fragments for navigation -->
 
     <string name="open_logo">Open logo</string>
@@ -10,4 +9,5 @@
     <string name="team_color_field">Цвет команды</string>
     <string name="game_date_field">Дата игры</string>
     <string name="login_button">Войти</string>
+
 </resources>
